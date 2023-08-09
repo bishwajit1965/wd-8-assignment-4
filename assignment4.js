@@ -7,8 +7,6 @@ function cubeNumber(number) {
     return Math.pow(number, 3);
   }
 }
-// const result = cubeNumber(10);
-// console.log(result);
 
 function matchFinder(string1, string2) {
   if (typeof string1 !== "string" || typeof string2 !== "string") {
@@ -22,10 +20,6 @@ function matchFinder(string1, string2) {
     return false;
   }
 }
-const string1 = "Peter Parker";
-const string2 = "pet";
-// const result = matchFinder(string1, string2);
-// console.log(result);
 
 function sortMaker(arr) {
   if (!Array.isArray(arr)) {
@@ -37,11 +31,9 @@ function sortMaker(arr) {
   if (arr[0] < 0 || arr[1] < 0) {
     return "Invalid Input";
   }
-
   if (arr[0] === arr[1]) {
     return "equal";
   }
-
   if (arr[0] > 0 || arr[1] < 0) {
     const reversedDesc = arr.sort(function (a, b) {
       return b - a;
@@ -50,34 +42,13 @@ function sortMaker(arr) {
   }
 }
 
-const arr = [4, -2];
-// const result = sortMaker(arr);
-// console.log(result);
-
 function findAddress(obj) {
   const street = obj.street || "__";
   const house = obj.house || "__";
   const society = obj.society || "__";
-  const outPut = street + " , " + house + " , " + society;
+  const outPut = street + "," + house + "," + society;
   return outPut;
 }
-
-const obj = {
-  street: 10,
-  house: "15A",
-  society: "Earth Perfect",
-};
-// const obj = {
-//   street: 10,
-//   society: "Earth Perfect",
-// };
-
-// const obj = {
-//   street: 10,
-// };
-
-// const result = findAddress(obj);
-// console.log(result);
 
 function canPay(changeArray, totalDue) {
   if (changeArray.length === 0) {
@@ -95,7 +66,3 @@ function canPay(changeArray, totalDue) {
     }
   }
 }
-const changeArray = [1, 5, 5];
-const totalDue = 10;
-// const result = canPay(changeArray, totalDue);
-// console.log(result);
